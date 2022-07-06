@@ -15,8 +15,8 @@ pipeline {
   stages {
     stage('install') {
       steps {
-        git branch: 'main', url: 'git 'https://github.com/Patricio-Usach/MINGESO_Jenkins.git'
-        dir('producto-service') {
+        git branch: 'main', url: 'https://github.com/Patricio-Usach/MINGESO_PEP3.git'
+        dir('main') {
           sh 'npm install'
         }
       }
